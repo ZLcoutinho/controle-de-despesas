@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <title>Controle de despesas</title>
+</head>
+<body>
+   <div class="container">
+        <header class="header-title">
+            <h2 class="title">Controle de despesas</h2><!--title-->
+        </header><!--header-title-->
+        <section class="seciton-principal">
+            <div class="current-balance">
+               <div class="current-account">
+                <p class="current-balance-title">
+                    SALDO ATUAL
+                </p><!--current-balance-title-->
+                <p class="current-money">R$ <span class="money-account"><span class="total-money-value">0.00</span></p>
+               </div><!--current-account-->  
+                <div class="outgoing-income">
+                    <div class="income">
+                        <p class="income-text">RECEITAS</p>
+                            <p class="income-number">R$ <span class="income-value">0.00</span></p>
+                    </div><!--income-->
+                    <div class="line-style"></div><!--line-style-->
+                    <div class="outgoing">
+                        <p class="outgoing-text">DESPESAS</p>
+                            <p class="outgoing-number">R$ <span class="outgoing-value">0.00</span></p>
+                    </div><!--outgoing-->
+                    <div class="clear"></div><!--clear-->
+                </div><!--outgoing-and-income-->
+            </div><!--current-balance-->
+            <div class="transactions-container">
+                <div class="transaction">
+                    <h4 class="transaction-title">Transações</h4>
+                    <ul class="transactions-list">
+                    </ul><!--trasactions-list-->
+                </div><!--trasactions-->
+                <div class="add-transaction">
+                    <h4 class="add-transaction-title">Adicionar transação</h4> 
+                    <form class="transaction-form">
+                        <label for="name" class="name-title">Nome</label><br />
+                        <input required class="name-transaction" type="text" id="name" placeholder="Nome da transação">
+                        <br />
+                        <label for="value" class="value-title">Valor</label><br />
+                        <p class="paragraph-info">|negativo - despesas, positivos - receitas!|</span></p>
+                        <input required class="value-transaction" type="text" id="value" placeholder="Valor da transação">
+                        <br />
+                        <button class="submit-transaction" type="submit">Adicionar</button>
+                    </form>           
+                </div><!--add-trasactions-->
+            </div><!--transaction-container-->
+        </section><!--section-principal-->
+   </div><!--container-->
+<script src="app.js"></script>   
+</body>
+</html>
